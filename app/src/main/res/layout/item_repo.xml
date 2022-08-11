@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="@dimen/corner_radius_elevation"
+    app:cardBackgroundColor="?attr/colorSurface"
     app:cardCornerRadius="@dimen/corner_radius_elevation"
     app:cardUseCompatPadding="true">
 
@@ -27,6 +28,7 @@
             android:layout_marginStart="@dimen/half_margin_default"
             android:layout_marginTop="@dimen/half_margin_default"
             android:layout_marginEnd="@dimen/half_margin_default"
+            android:textColor="?attr/colorOnSurface"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/ivOwner"
@@ -40,6 +42,7 @@
             android:layout_marginEnd="@dimen/half_margin_default"
             android:ellipsize="end"
             android:maxLines="2"
+            android:textColor="?attr/colorOnSurface"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/tvRepoName"
             app:layout_constraintTop_toBottomOf="@id/tvRepoName"
@@ -51,7 +54,7 @@
             android:layout_height="30dp"
             app:chipBackgroundColor="@color/white"
             app:chipIcon="@drawable/ic_star"
-            app:chipIconTint="#FFFF00"
+            app:chipIconTint="@color/star_color"
             app:layout_constraintStart_toStartOf="@id/tvRepoName"
             app:layout_constraintTop_toBottomOf="@id/tvRepoDescription"
             tools:text="@sample/repositories.json/data/stargazers_count" />
