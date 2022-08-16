@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
         binding.rvRepos.adapter = adapter
 
+        viewModel.getRepoList("sblvitor")
         viewModel.repos.observe(this) {
             when(it){
                 MainViewModel.State.Loading -> dialog.show()
